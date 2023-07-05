@@ -1,0 +1,64 @@
+body{
+    background-color: black;
+}
+/*nav*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    
+}
+
+li a{
+    display: block;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 1.5em;
+    padding-left: 1em;
+    padding-right: 1.5em;
+}
+
+ul img{
+    width: 3em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    float: left;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+li{
+    float: right;
+}
+
+li a:hover{
+    color:rgb(122, 122, 122);
+} 
+
+/*Index*/
+
+img{
+    width: 100%;
+}
+
+.centro {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 7em;
+}
+
+.centro mark
+{
+    background-color: rgb(255, 255, 255, 0.3);
+    color: black;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
