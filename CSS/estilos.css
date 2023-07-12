@@ -1,46 +1,59 @@
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
 }
 /*nav*/
+
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    stroke:#ffffff;
+    stroke-width: 5em;
+    flex-direction: row;
     
 }
 
 li a{
     display: block;
-    color:white;
-    text-align: center;
     text-decoration: none;
     padding-top: 1.5em;
     padding-left: 1em;
     padding-right: 1.5em;
+    padding-bottom: 1.5em;
+    color: white;
 }
 
 ul img{
     width: 3em;
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
+    padding-top: 0.7em;
+    padding-bottom: 0.35em;
     float: left;
     margin-left: 0.5em;
     margin-right: 0.5em;
 }
 
+.nomMuseo{
+    float: left;
+}
 li{
     float: right;
 }
 
-li a:hover{
-    color:rgb(122, 122, 122);
+div li a:hover{
+    color:rgb(255, 0, 0);
 } 
 
 /*Index*/
 
-img{
+video{
+    object-fit: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
 }
 
@@ -54,11 +67,178 @@ img{
 
 .centro mark
 {
-    background-color: rgb(255, 255, 255, 0.3);
-    color: black;
+    background-color: rgb(0, 0, 0, 0.3);
+    color: rgb(230, 221, 221);
 }
 
 .container {
     position: relative;
     text-align: center;
+}
+
+h1{
+    color:white;
+    text-align: center;
+}
+
+h2{
+    color:white;
+    text-align: center;
+}
+
+h3{
+    color:white;
+}
+
+
+/*card de lo más destacado*/
+.row{
+    margin: 2em;
+}  
+
+.column {
+    float: left;
+    width: 28em;
+    margin-bottom: 16px;
+    margin-left: 6em;
+    padding: 0 8px;
+  }
+  
+  .card {
+    background-color: #d8cde0;
+  }
+  
+  .card img{
+      width: 28em;
+  }
+
+  .container_card h2{
+    text-align: center;
+    color:#451024;    
+  }
+  
+.container_card p{
+    text-align: center;
+    color:#a5204e;
+}
+
+.container_card::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /*cards exhibiciones*/
+
+  .rowEx{
+    margin: 2em;
+    flex-wrap: wrap;
+}  
+
+.columnEx {
+    float: left;
+    width: 100%;
+    margin-bottom: 16px;
+    margin-left: 6em;
+    padding: 0 8px;
+  }
+  
+  .cardEx {
+    background-color: #d8cde0;
+    display: flex;
+    flex-basis: 50%;
+    width: 100em;
+  }
+  
+  .cardEx img{
+      width: 50%;
+  }
+
+
+.container_cardEx{
+    width:100%;
+}  
+.container_cardEx h2{
+    font-size: 2.5em;
+    text-align: center;
+    color:#451024;    
+  }
+  
+.container_cardEx p{
+    text-align: center;
+    color:#a5204e;
+}
+
+.container_cardEx::after, .rowEx::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /*Contactos*/
+
+  .imagenFondo  img{
+    height: 100%; 
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/*   .textoImagen h1{
+    font-family:'albertus';
+  }
+
+  .textoImagen p{
+    font-family:'atwriter';
+  }
+ */
+  .textoImagen {
+    background-color: #451024; 
+    background-color: rgba(69, 16, 36, 0.4); 
+    color: #d8cde0;
+    font-weight: bold;
+    border: 3px solid #d8cde0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /*Eventos*/
+
+.columnEv {
+    float: left;
+    width: 29em;
+    margin-bottom: 16px;
+    padding: 0 8px;
+
+  }
+  
+  .cardEv {
+    background-color: #d8cde0;
+  }
+  
+  .cardEv img{
+      width: 29em;
+  }
+
+  .container_cardEv h2{
+    text-align: center;
+    color:#451024;    
+  }
+  
+.container_cardEv p{
+    text-align: center;
+    color:#a5204e;
+}
+
+.container_cardEv::after, .rowEv::after {
+    content: "";
+    clear: both;
+    display: table;
 }
